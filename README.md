@@ -27,7 +27,7 @@ $ pip install -r requirements.txt
 
 The data files must be converted into json lines format:
 ```json
-{"uid": ID, "label": LABEL_ID, "hypothesis": "TEXT OF THE CONTEXT", "premise": "TEXT OF THE TARGET"}
+{"uid": 1234, "label": 0, "hypothesis": "TEXT OF THE CONTEXT", "premise": "TEXT OF THE TARGET"}
 ```
 
 The files for each dataset must be named with the following pattern: `rumor_train.json`, `rumor_dev.json`, `rumor_test.json`, where `rumor` should be replaced with the proper name of the dataset (see DATASETS below).    
