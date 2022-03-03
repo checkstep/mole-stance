@@ -23,6 +23,15 @@ $ pip install -r requirements.txt
 * Political Debates [Data](http://mpqa.cs.pitt.edu/corpora/political_debates/) (poldeb)
 * VAried Stance Topics [Data](https://github.com/emilyallaway/zero-shot-stance) (vast)
 
+### Format
+
+The data files must be converted into json lines format:
+```json
+{"uid": ID, "label": LABEL_ID, "hypothesis": "TEXT OF THE CONTEXT", "premise": "TEXT OF THE TARGET"}
+```
+
+The files for each dataset must be named with the following pattern: `rumor_train.json`, `rumor_dev.json`, `rumor_test.json`, where `rumor` should be replaced with the proper name of the dataset (see DATASETS below).    
+
 ## Running the code
 
 ### Environment
